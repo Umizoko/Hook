@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+}
+
+hedaer {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#chat_bord ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#chat_bord ul li {
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    font-size: 16px;
+}
+
+.user {
+    text-align: right;
+}
+
+.bot {
+    text-align: left;
+}
+
+#wrapper form {
+
+    text-align: center;
+}
