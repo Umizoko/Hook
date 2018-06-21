@@ -2,17 +2,33 @@
 
 body {
     width: 100%;
+    margin-bottom: 0;
 }
 
 hedaer {
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0;
 }
 
-header h1 {
+header ul {
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul #title {
+    font-size: 200px;
+}
+
+header ul #subTitle {
+    font-size: 40px;
+    text-align: left;
+    line-height: 1;
 }
 
 #wrapper {
@@ -41,7 +57,25 @@ header h1 {
     text-align: left;
 }
 
-#wrapper form {
+#wrapper #text_input {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-100%) translateX(-50%);
+    -webkit-transform: translateY(-100%) translateX(-50%);
+    opacity: 0.5;
+}
 
+#text_input form {
     text-align: center;
+    margin: 0;
+    padding: 10px;
+} 
+
+footer {
+    margin: 0 auto;
+    padding: 0;
+    height: 46px;
 }
