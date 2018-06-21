@@ -1,8 +1,10 @@
+// recruit社の提供しているTALK APIを使用 
+// 2018/06/22
+
 $(document).ready(function(){
     var sendUrl = "https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk";
     var apiKey = "";
     var recieveChat = function(query){
-        var text = "";
             $.ajax({
             url: sendUrl,
             type: "POST",
@@ -14,6 +16,9 @@ $(document).ready(function(){
         })
         .done(function(data){
             // console.log(data);
+
+            // responseがok以外の時の処理を書く
+
             // bot側のメッセージをhtmlに表示
             var bot_message = data.results[0].reply;
             var list = document.createElement("li");
@@ -23,6 +28,9 @@ $(document).ready(function(){
 
             // 最後尾に移動
             location.href = "#endPoint";
+
+            // テキスト入力フォームをアクティブ
+            document.getElementById("form").word.focus();
         })
         .fail(function(){
             window.alert("error");
@@ -32,7 +40,6 @@ $(document).ready(function(){
     // submit event -> chatAPIを送信
     document.getElementById("form").onsubmit = function(){
 
-        
         // user側のメッセージをhtmlに表示
         var user_message = document.getElementById("form").word.value;
         // 入力なし
@@ -56,5 +63,7 @@ $(document).ready(function(){
         // 再更新を停止
         return false;
     };
+
+
 
 });
