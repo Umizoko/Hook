@@ -28,9 +28,6 @@ body::before {
 }
 
 hedaer {
-    /* width: 90%;
-    max-width: 600px; */
-
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
@@ -60,7 +57,6 @@ header ul #subTitle {
     line-height: 1;
     color: black;
     opacity: 0.7;
-    /* text-shadow: 1px 1px 1px rgb(253, 253, 253) */
 }
 
 #wrapper {
@@ -77,18 +73,49 @@ header ul #subTitle {
 }
 
 #chat_bord ul li {
-    border-bottom: 1px solid rgba(0,0,0,0.25);
     font-size: 16px;
+    width: 70vh;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#chat_bord ul li:last-child {
+    margin-bottom: 0;
 }
 
 .user {
+    float: right;
     text-align: right;
     color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    
+    padding: 30px 10px 10px 10px;
+}
+
+.user .time {
+    font-size: smaller;
 }
 
 .bot {
-    text-align: left;
+    float: left;
     color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.bot i {
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+
+.bot .time {
+    font-size: smaller;
+    text-align: right;
 }
 
 #wrapper #text_input {
@@ -118,6 +145,8 @@ header ul #subTitle {
 }
 
 footer {
+    overflow: hidden;
+    clear: both;
     margin: 0 auto;
     padding: 0;
     height: 46px;
