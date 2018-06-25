@@ -53,7 +53,7 @@ var addChatList = function(id, message){
 
 $(document).ready(function(){
 
-    var apiKey = "";
+    var apiKey = "35496932636c7a4f5a7a67576d67316d67545856554c4655556c485375436647494d334167416663535437";
     var host = "https://api.apigw.smt.docomo.ne.jp/naturalChatting/v1/registration?APIKEY=" + apiKey;
     var requestbody = {   
         botId: "Chatting",
